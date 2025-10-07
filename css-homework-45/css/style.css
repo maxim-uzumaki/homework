@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    overflow: auto;
+    height: 500px;
+    background: #dddddd;
+    border: 1px solid #000;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px 5px;
+}
+
+.wrapper div {
+    display: inline-block;
+    background: #ac9c72;
+    width: 235px;
+    padding: 15px 20px;
+    margin: 0px 10px 20px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px 6px rgba(99, 99, 99, 0.699) inset;
+}
