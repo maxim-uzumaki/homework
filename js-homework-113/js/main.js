@@ -9,7 +9,7 @@ const openModal = () => {
 
 const closeModal = () => {
     modal.classList.remove('modal--open')
-    body.classList.removed('body--fixed')
+    body.classList.remove('body--fixed')
 }
 
 btn.addEventListener('click', openModal)
@@ -25,4 +25,5 @@ document.addEventListener('keydown', event => {
     if (event.code === 'Escape' && modal.classList.contains('modal--open')) {
         closeModal()
     }
+
 })
