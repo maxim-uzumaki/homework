@@ -75,10 +75,11 @@ button:focus-visible {
 
 @media (width <= 576px) {
 	.section {
-		padding-bottom: 180px;
+		padding-bottom: 80px;
 	}
 
 	.section-title {
 		margin-bottom: 30px;
 	}
 }
+
