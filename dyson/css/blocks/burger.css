@@ -1,0 +1,52 @@
+.burger {
+	position: relative;
+	z-index: var(--layer-3);
+	color: var(--bg-color);
+	-webkit-transition: color var(--transition-time);
+	-o-transition: color var(--transition-time);
+	transition: color var(--transition-time);
+}
+
+@media (width > 1300px) {
+	.burger {
+		display: none;
+	}
+}
+
+@media (any-hover: hover) {
+	.burger:hover {
+		color: var(--accent-color);
+	}
+}
+
+.burger:active {
+	color: var(--accent-color);
+}
+
+.burger__icon {
+	stroke: currentColor;
+}
+
+@media (width > 576px) and (width <= 768px) {
+	.burger__icon {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media (width <= 576px) {
+	.burger__icon {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.burger__icon-menu,
+.burger--open .burger__icon-cross {
+	display: block;
+}
+
+.burger__icon-cross,
+.burger--open .burger__icon-menu {
+	display: none;
+}

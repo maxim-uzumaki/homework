@@ -1,0 +1,38 @@
+:root {
+	/* font-family */
+	--font-family: "Open Sans", sans-serif;
+	--second-family: "NAMU Pro", sans-serif;
+
+	/* colors */
+	--accent-color: #c5358c;
+	--main-color: #111;
+	--bg-color: #fff;
+	--bg-second-color: #f8f8f8;
+	--bg-third-color: #ddd;
+	--row-line-color: #ababab;
+	--date-color: #909090;
+	--in-stock-color: #68ae5c;
+	--out-stock-color: #dc5b5b;
+
+	/* shadows */
+	--header-shadow: 0 0 10px #181817;
+	--main-shadow: 0 4px 41px #0000000d;
+
+	/* border */
+	--border-radius: 3px;
+
+	/* container */
+	--container-width: 1360px;
+	--container-padding: 70px;
+	--container-mobile-padding: 20px;
+
+	/* transitions */
+	--transition-time: 0.2s;
+
+	/* layers */
+	--layer-negative: -1;
+	--layer-0: 0;
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
+}

@@ -1,0 +1,85 @@
+.show-more-button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border: 1px solid var(--main-color);
+	border-radius: var(--border-radius);
+	font-weight: 400;
+	color: var(--main-color);
+	-webkit-transition:
+		color var(--transition-time),
+		border-color var(--transition-time);
+	-o-transition:
+		color var(--transition-time),
+		border-color var(--transition-time);
+	transition:
+		color var(--transition-time),
+		border-color var(--transition-time);
+}
+
+@media (width > 768px) {
+	.show-more-button {
+		gap: 30px;
+		padding-block: 15.5px;
+		padding-left: 49px;
+		padding-right: 39px;
+		font-size: 24px;
+	}
+}
+
+@media (width <= 768px) {
+	.show-more-button {
+		gap: 14px;
+		padding-block: 5.6px;
+	}
+}
+
+@media (width > 576px) and (width <= 768px) {
+	.show-more-button {
+		padding-left: 25.5px;
+		padding-right: 22.5px;
+		font-size: 16px;
+	}
+}
+
+@media (width <= 576px) {
+	.show-more-button {
+		padding-left: 21.5px;
+		padding-right: 17.5px;
+		font-size: 15px;
+	}
+}
+
+.show-more-button__icon {
+	fill: currentColor;
+	-webkit-transition: color var(--transition-time);
+	-o-transition: color var(--transition-time);
+	transition: color var(--transition-time);
+}
+
+@media (width <= 768px) {
+	.show-more-button__icon {
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+		width: 15px;
+		height: 14px;
+		padding-block: 4.5px;
+		padding-left: 4px;
+		padding-right: 5px;
+	}
+}
+
+@media (any-hover: hover) {
+	.show-more-button:hover {
+		color: var(--accent-color);
+		border-color: var(--accent-color);
+	}
+}
+
+.show-more-button:active {
+	color: var(--accent-color);
+	border-color: var(--accent-color);
+}
